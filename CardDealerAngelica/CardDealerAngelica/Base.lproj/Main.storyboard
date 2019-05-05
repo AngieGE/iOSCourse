@@ -40,9 +40,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0J-cT-vdR">
-                                <rect key="frame" x="49.5" y="172" width="276" height="323"/>
+                                <rect key="frame" x="82" y="214.5" width="211" height="238"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="Button" image="2_of_clubs.png" backgroundImage="back.png">
+                                <state key="normal" title="Button" image="back.png" backgroundImage="back.png">
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -55,6 +55,8 @@
                             <constraint firstItem="o0J-cT-vdR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3gU-3R-5ML"/>
                             <constraint firstItem="o0J-cT-vdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DTW-7a-Ta5"/>
                             <constraint firstItem="o0J-cT-vdR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Iue-QR-hEz"/>
+                            <constraint firstItem="o0J-cT-vdR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PGD-4R-6tS"/>
+                            <constraint firstItem="o0J-cT-vdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZGh-RY-Ikb"/>
                             <constraint firstItem="o0J-cT-vdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="etQ-uS-b5r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -73,16 +75,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_of_clubs.png" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-kC-zbp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="oIR-9u-GdJ">
                                 <rect key="frame" x="76.5" y="172" width="222" height="323"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hjt-kC-zbp" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="5Rn-QG-oG9"/>
-                            <constraint firstItem="hjt-kC-zbp" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="Em0-rd-VGD"/>
-                            <constraint firstItem="hjt-kC-zbp" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="HdY-sw-rNa"/>
-                            <constraint firstItem="hjt-kC-zbp" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="ohj-rm-BCE"/>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="6su-Z0-aI7"/>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="YF4-bI-b7L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BCZ-2L-6Ef"/>
                     </view>
@@ -111,7 +111,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2_of_clubs.png" width="222" height="323"/>
+        <image name="2_of_clubs" width="222" height="323"/>
         <image name="back.png" width="157" height="238"/>
     </resources>
 </document>
