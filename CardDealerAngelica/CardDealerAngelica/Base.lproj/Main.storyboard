@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Deal a card" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7pV-K6-u5W">
-                                <rect key="frame" x="67" y="126" width="240" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Cards left:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="z2a-Ac-Dh2">
                                 <rect key="frame" x="16" y="595" width="240" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -32,7 +25,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="32" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0DD-nD-fWy">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="52" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0DD-nD-fWy">
                                 <rect key="frame" x="196" y="596" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -46,7 +39,7 @@
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kQ0-vo-r1J" kind="show" id="2Nq-AT-VuA"/>
+                                    <action selector="DealCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DtP-fP-bAG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,34 +55,47 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="oXK-pB-fKZ"/>
+                    <connections>
+                        <segue destination="kQ0-vo-r1J" kind="presentation" identifier="identifierClick" id="Uy2-Vy-61c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-340" y="223.53823088455775"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="mfb-ck-8ez">
             <objects>
-                <viewController id="kQ0-vo-r1J" sceneMemberID="viewController">
+                <viewController id="kQ0-vo-r1J" customClass="SecondViewController" customModule="CardDealerAngelica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rPr-5D-vmd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="oIR-9u-GdJ">
-                                <rect key="frame" x="76.5" y="172" width="222" height="323"/>
+                                <rect key="frame" x="76.5" y="53" width="222" height="561"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="1LD-Kp-1Ys"/>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="3Wg-po-jji"/>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="top" secondItem="rPr-5D-vmd" secondAttribute="topMargin" constant="33" id="4sC-oD-QVH"/>
                             <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="6su-Z0-aI7"/>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="DEJ-AQ-FBm"/>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="EbY-nO-yMu"/>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="LUA-Yv-HGS"/>
                             <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="YF4-bI-b7L"/>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="t4v-y3-fhO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BCZ-2L-6Ef"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImage" destination="oIR-9u-GdJ" id="5Fj-eR-4BR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzL-kN-7bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="655" y="248"/>
+            <point key="canvasLocation" x="653.60000000000002" y="247.82608695652175"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8cG-5q-QzM">
