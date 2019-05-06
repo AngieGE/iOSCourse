@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var CardsLeft: UITextView!
     var card = ""
     var cards = [ "4_of_clubs", "2_of_spades","5_of_diamonds"]
     
@@ -17,13 +18,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         title = "Deal a card"
-
+        CardsLeft.text = "Cards left: " + String(cards.count)
     }
     
     @IBAction func DealCardButton(_ sender: Any) {
         self.card = cards[0]
         performSegue(withIdentifier: "identifierClick", sender: self)
-       // cards.remove(at:0)
+      // cards.remove(at:0)
     }
     
     //called when a segue is called

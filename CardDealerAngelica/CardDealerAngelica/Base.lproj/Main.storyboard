@@ -25,13 +25,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="52" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0DD-nD-fWy">
-                                <rect key="frame" x="196" y="596" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0J-cT-vdR">
                                 <rect key="frame" x="82" y="214.5" width="211" height="238"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -56,6 +49,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="oXK-pB-fKZ"/>
                     <connections>
+                        <outlet property="CardsLeft" destination="z2a-Ac-Dh2" id="31g-OS-OLY"/>
                         <segue destination="kQ0-vo-r1J" kind="presentation" identifier="identifierClick" id="Uy2-Vy-61c"/>
                     </connections>
                 </viewController>
@@ -71,9 +65,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="oIR-9u-GdJ">
-                                <rect key="frame" x="76.5" y="53" width="222" height="561"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="oIR-9u-GdJ">
+                                <rect key="frame" x="77" y="153" width="222" height="461"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okh-1h-urs">
+                                <rect key="frame" x="45" y="60" width="34" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Hid-Qq-QvC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -85,6 +87,7 @@
                             <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="EbY-nO-yMu"/>
                             <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="LUA-Yv-HGS"/>
                             <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="YF4-bI-b7L"/>
+                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="top" secondItem="BCZ-2L-6Ef" secondAttribute="top" constant="33" id="YH2-DN-Bz7"/>
                             <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="t4v-y3-fhO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BCZ-2L-6Ef"/>
@@ -95,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzL-kN-7bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653.60000000000002" y="247.82608695652175"/>
+            <point key="canvasLocation" x="457" y="187"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8cG-5q-QzM">
@@ -120,4 +123,7 @@
         <image name="2_of_clubs" width="222" height="323"/>
         <image name="back.png" width="157" height="238"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hid-Qq-QvC"/>
+    </inferredMetricsTieBreakers>
 </document>

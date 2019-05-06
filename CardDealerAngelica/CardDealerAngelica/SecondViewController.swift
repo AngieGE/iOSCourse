@@ -14,8 +14,10 @@ class SecondViewController: UIViewController {
     var cardName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.cardImage.image = UIImage(named: cardName)
         // Do any additional setup after loading the view.
+      title = cardName
+
+      
     }
     
 
