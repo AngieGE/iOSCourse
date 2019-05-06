@@ -2,22 +2,19 @@
 //  SecondViewController.swift
 //  CardDealerAngelica
 //
-//  Created by Ariadna Angelica Guemes Estrada on 2019-05-04.
+//  Created by Ariadna Angelica Guemes Estrada on 2019-05-06.
 //  Copyright © 2019 Ariadna Angelica Guemes Estrada. All rights reserved.
 //
 
 import UIKit
 
 class SecondViewController: UIViewController {
-
-    @IBOutlet weak var cardImage: UIImageView!
-    var cardName = ""
+ var cardName = ""
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-      title = cardName
-
-      
+            title = cardName
     }
     
 

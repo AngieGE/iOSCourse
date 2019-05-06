@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Deal a Card-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardDealerAngelica" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,6 +33,7 @@
                                 </state>
                                 <connections>
                                     <action selector="DealCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DtP-fP-bAG"/>
+                                    <segue destination="KXe-DC-Ywy" kind="show" identifier="identifierClick" id="Kn3-hm-l3j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,10 +48,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oXK-pB-fKZ"/>
+                    <navigationItem key="navigationItem" title="Deal a Card" id="oXK-pB-fKZ"/>
                     <connections>
                         <outlet property="CardsLeft" destination="z2a-Ac-Dh2" id="31g-OS-OLY"/>
-                        <segue destination="kQ0-vo-r1J" kind="presentation" identifier="identifierClick" id="Uy2-Vy-61c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -58,47 +58,19 @@
             <point key="canvasLocation" x="-340" y="223.53823088455775"/>
         </scene>
         <!--Second View Controller-->
-        <scene sceneID="mfb-ck-8ez">
+        <scene sceneID="RKr-il-EoO">
             <objects>
-                <viewController id="kQ0-vo-r1J" customClass="SecondViewController" customModule="CardDealerAngelica" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rPr-5D-vmd">
+                <viewController id="KXe-DC-Ywy" customClass="SecondViewController" customModule="CardDealerAngelica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="49w-Db-zu9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="oIR-9u-GdJ">
-                                <rect key="frame" x="77" y="153" width="222" height="461"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okh-1h-urs">
-                                <rect key="frame" x="45" y="60" width="34" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Hid-Qq-QvC"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="1LD-Kp-1Ys"/>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="3Wg-po-jji"/>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="top" secondItem="rPr-5D-vmd" secondAttribute="topMargin" constant="33" id="4sC-oD-QVH"/>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="6su-Z0-aI7"/>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="DEJ-AQ-FBm"/>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="EbY-nO-yMu"/>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="LUA-Yv-HGS"/>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerY" secondItem="rPr-5D-vmd" secondAttribute="centerY" id="YF4-bI-b7L"/>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="top" secondItem="BCZ-2L-6Ef" secondAttribute="top" constant="33" id="YH2-DN-Bz7"/>
-                            <constraint firstItem="oIR-9u-GdJ" firstAttribute="centerX" secondItem="rPr-5D-vmd" secondAttribute="centerX" id="t4v-y3-fhO"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="BCZ-2L-6Ef"/>
+                        <viewLayoutGuide key="safeArea" id="nFg-5f-K7O"/>
                     </view>
-                    <connections>
-                        <outlet property="cardImage" destination="oIR-9u-GdJ" id="5Fj-eR-4BR"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wzL-kN-7bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klA-9I-Vit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="187"/>
+            <point key="canvasLocation" x="489" y="209"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8cG-5q-QzM">
@@ -120,10 +92,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2_of_clubs" width="222" height="323"/>
         <image name="back.png" width="157" height="238"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Hid-Qq-QvC"/>
-    </inferredMetricsTieBreakers>
 </document>
