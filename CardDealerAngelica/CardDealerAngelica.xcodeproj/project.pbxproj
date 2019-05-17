@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C2A3D4A227E4E0A002CBA94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A3D49227E4E0A002CBA94 /* AppDelegate.swift */; };
-		2C2A3D4C227E4E0A002CBA94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A3D4B227E4E0A002CBA94 /* ViewController.swift */; };
-		2C2A3D4F227E4E0A002CBA94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A3D4D227E4E0A002CBA94 /* Main.storyboard */; };
-		2C2A3D51227E4E17002CBA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A3D50227E4E17002CBA94 /* Assets.xcassets */; };
-		2C2A3D54227E4E17002CBA94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A3D52227E4E17002CBA94 /* LaunchScreen.storyboard */; };
-		2CB1497D2280ADE100E7B242 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB1497C2280ADE100E7B242 /* SecondViewController.swift */; };
+		2CF8F91D2289F4D00051313B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8F91C2289F4D00051313B /* AppDelegate.swift */; };
+		2CF8F91F2289F4D00051313B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8F91E2289F4D00051313B /* ViewController.swift */; };
+		2CF8F9222289F4D00051313B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF8F9202289F4D00051313B /* Main.storyboard */; };
+		2CF8F9242289F4D10051313B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF8F9232289F4D10051313B /* Assets.xcassets */; };
+		2CF8F9272289F4D10051313B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF8F9252289F4D10051313B /* LaunchScreen.storyboard */; };
+		2CF8F9312289F5B50051313B /* CardDispplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8F9302289F5B50051313B /* CardDispplayController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C2A3D46227E4E0A002CBA94 /* CardDealerAngelica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardDealerAngelica.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C2A3D49227E4E0A002CBA94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C2A3D4B227E4E0A002CBA94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C2A3D4E227E4E0A002CBA94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2C2A3D50227E4E17002CBA94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C2A3D53227E4E17002CBA94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2C2A3D55227E4E17002CBA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CB1497C2280ADE100E7B242 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2CF8F9192289F4D00051313B /* CardDealerAngelica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardDealerAngelica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF8F91C2289F4D00051313B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CF8F91E2289F4D00051313B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CF8F9212289F4D00051313B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CF8F9232289F4D10051313B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CF8F9262289F4D10051313B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CF8F9282289F4D10051313B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF8F9302289F5B50051313B /* CardDispplayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDispplayController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C2A3D43227E4E0A002CBA94 /* Frameworks */ = {
+		2CF8F9162289F4D00051313B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C2A3D3D227E4E09002CBA94 = {
+		2CF8F9102289F4D00051313B = {
 			isa = PBXGroup;
 			children = (
-				2C2A3D48227E4E0A002CBA94 /* CardDealerAngelica */,
-				2C2A3D47227E4E0A002CBA94 /* Products */,
+				2CF8F91B2289F4D00051313B /* CardDealerAngelica */,
+				2CF8F91A2289F4D00051313B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2C2A3D47227E4E0A002CBA94 /* Products */ = {
+		2CF8F91A2289F4D00051313B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C2A3D46227E4E0A002CBA94 /* CardDealerAngelica.app */,
+				2CF8F9192289F4D00051313B /* CardDealerAngelica.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C2A3D48227E4E0A002CBA94 /* CardDealerAngelica */ = {
+		2CF8F91B2289F4D00051313B /* CardDealerAngelica */ = {
 			isa = PBXGroup;
 			children = (
-				2C2A3D49227E4E0A002CBA94 /* AppDelegate.swift */,
-				2C2A3D4B227E4E0A002CBA94 /* ViewController.swift */,
-				2CB1497C2280ADE100E7B242 /* SecondViewController.swift */,
-				2C2A3D4D227E4E0A002CBA94 /* Main.storyboard */,
-				2C2A3D50227E4E17002CBA94 /* Assets.xcassets */,
-				2C2A3D52227E4E17002CBA94 /* LaunchScreen.storyboard */,
-				2C2A3D55227E4E17002CBA94 /* Info.plist */,
+				2CF8F91C2289F4D00051313B /* AppDelegate.swift */,
+				2CF8F91E2289F4D00051313B /* ViewController.swift */,
+				2CF8F9302289F5B50051313B /* CardDispplayController.swift */,
+				2CF8F9202289F4D00051313B /* Main.storyboard */,
+				2CF8F9232289F4D10051313B /* Assets.xcassets */,
+				2CF8F9252289F4D10051313B /* LaunchScreen.storyboard */,
+				2CF8F9282289F4D10051313B /* Info.plist */,
 			);
 			path = CardDealerAngelica;
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C2A3D45227E4E0A002CBA94 /* CardDealerAngelica */ = {
+		2CF8F9182289F4D00051313B /* CardDealerAngelica */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C2A3D58227E4E17002CBA94 /* Build configuration list for PBXNativeTarget "CardDealerAngelica" */;
+			buildConfigurationList = 2CF8F92B2289F4D10051313B /* Build configuration list for PBXNativeTarget "CardDealerAngelica" */;
 			buildPhases = (
-				2C2A3D42227E4E0A002CBA94 /* Sources */,
-				2C2A3D43227E4E0A002CBA94 /* Frameworks */,
-				2C2A3D44227E4E0A002CBA94 /* Resources */,
+				2CF8F9152289F4D00051313B /* Sources */,
+				2CF8F9162289F4D00051313B /* Frameworks */,
+				2CF8F9172289F4D00051313B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = CardDealerAngelica;
 			productName = CardDealerAngelica;
-			productReference = 2C2A3D46227E4E0A002CBA94 /* CardDealerAngelica.app */;
+			productReference = 2CF8F9192289F4D00051313B /* CardDealerAngelica.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C2A3D3E227E4E09002CBA94 /* Project object */ = {
+		2CF8F9112289F4D00051313B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Ariadna Angelica Guemes Estrada";
 				TargetAttributes = {
-					2C2A3D45227E4E0A002CBA94 = {
+					2CF8F9182289F4D00051313B = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 2C2A3D41227E4E09002CBA94 /* Build configuration list for PBXProject "CardDealerAngelica" */;
+			buildConfigurationList = 2CF8F9142289F4D00051313B /* Build configuration list for PBXProject "CardDealerAngelica" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 2C2A3D3D227E4E09002CBA94;
-			productRefGroup = 2C2A3D47227E4E0A002CBA94 /* Products */;
+			mainGroup = 2CF8F9102289F4D00051313B;
+			productRefGroup = 2CF8F91A2289F4D00051313B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C2A3D45227E4E0A002CBA94 /* CardDealerAngelica */,
+				2CF8F9182289F4D00051313B /* CardDealerAngelica */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C2A3D44227E4E0A002CBA94 /* Resources */ = {
+		2CF8F9172289F4D00051313B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2A3D54227E4E17002CBA94 /* LaunchScreen.storyboard in Resources */,
-				2C2A3D51227E4E17002CBA94 /* Assets.xcassets in Resources */,
-				2C2A3D4F227E4E0A002CBA94 /* Main.storyboard in Resources */,
+				2CF8F9272289F4D10051313B /* LaunchScreen.storyboard in Resources */,
+				2CF8F9242289F4D10051313B /* Assets.xcassets in Resources */,
+				2CF8F9222289F4D00051313B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C2A3D42227E4E0A002CBA94 /* Sources */ = {
+		2CF8F9152289F4D00051313B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB1497D2280ADE100E7B242 /* SecondViewController.swift in Sources */,
-				2C2A3D4C227E4E0A002CBA94 /* ViewController.swift in Sources */,
-				2C2A3D4A227E4E0A002CBA94 /* AppDelegate.swift in Sources */,
+				2CF8F91F2289F4D00051313B /* ViewController.swift in Sources */,
+				2CF8F9312289F5B50051313B /* CardDispplayController.swift in Sources */,
+				2CF8F91D2289F4D00051313B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2C2A3D4D227E4E0A002CBA94 /* Main.storyboard */ = {
+		2CF8F9202289F4D00051313B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C2A3D4E227E4E0A002CBA94 /* Base */,
+				2CF8F9212289F4D00051313B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2C2A3D52227E4E17002CBA94 /* LaunchScreen.storyboard */ = {
+		2CF8F9252289F4D10051313B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C2A3D53227E4E17002CBA94 /* Base */,
+				2CF8F9262289F4D10051313B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2C2A3D56227E4E17002CBA94 /* Debug */ = {
+		2CF8F9292289F4D10051313B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		2C2A3D57227E4E17002CBA94 /* Release */ = {
+		2CF8F92A2289F4D10051313B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +282,7 @@
 			};
 			name = Release;
 		};
-		2C2A3D59227E4E17002CBA94 /* Debug */ = {
+		2CF8F92C2289F4D10051313B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -299,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		2C2A3D5A227E4E17002CBA94 /* Release */ = {
+		2CF8F92D2289F4D10051313B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C2A3D41227E4E09002CBA94 /* Build configuration list for PBXProject "CardDealerAngelica" */ = {
+		2CF8F9142289F4D00051313B /* Build configuration list for PBXProject "CardDealerAngelica" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C2A3D56227E4E17002CBA94 /* Debug */,
-				2C2A3D57227E4E17002CBA94 /* Release */,
+				2CF8F9292289F4D10051313B /* Debug */,
+				2CF8F92A2289F4D10051313B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C2A3D58227E4E17002CBA94 /* Build configuration list for PBXNativeTarget "CardDealerAngelica" */ = {
+		2CF8F92B2289F4D10051313B /* Build configuration list for PBXNativeTarget "CardDealerAngelica" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C2A3D59227E4E17002CBA94 /* Debug */,
-				2C2A3D5A227E4E17002CBA94 /* Release */,
+				2CF8F92C2289F4D10051313B /* Debug */,
+				2CF8F92D2289F4D10051313B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2C2A3D3E227E4E09002CBA94 /* Project object */;
+	rootObject = 2CF8F9112289F4D00051313B /* Project object */;
 }

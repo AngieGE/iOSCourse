@@ -2,35 +2,45 @@
 //  ViewController.swift
 //  CardDealerAngelica
 //
-//  Created by Ariadna Angelica Guemes Estrada on 2019-05-04.
+//  Created by Ariadna Angelica Guemes Estrada on 2019-05-13.
 //  Copyright © 2019 Ariadna Angelica Guemes Estrada. All rights reserved.
 //
 
 import UIKit
-
+var deckIndex : Int! = 0
+var cardsLeft : Int! = 52
 class ViewController: UIViewController {
 
-    @IBOutlet weak var CardsLeft: UITextView!
-    var card = ""
-    var cards = [ "4_of_clubs", "2_of_spades","5_of_diamonds"]
+
+    @IBOutlet weak var button: UIButton!
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        title = "Deal a card"
-        CardsLeft.text = "Cards left: " + String(cards.count)
+        //update the amount of card on the deck
+        button.setTitle("Cards left: " + String( cardsLeft), for: .normal)
+        
     }
     
-    @IBAction func DealCardButton(_ sender: Any) {
-        self.card = cards[0]
-        performSegue(withIdentifier: "identifierClick", sender: self)
-      // cards.remove(at:0)
+    //called when taking a card
+    @IBAction func UpdateDeckAmount(_ sender: UIButton) {
+        cardsLeft = cardsLeft - 1 // update deck amount everytime the button is clicked
     }
     
-    //called when a segue is called
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! SecondViewController
-        vc.cardName = self.card
+        let vc = segue.destination as! CardDispplayController
+        vc.i = deckIndex
+        deckIndex = deckIndex + 1
+        //reset the deck after they saw all the cards
+        if(deckIndex == 52)
+        {
+            deckIndex = 0
+            cardsLeft = 52
+        }
+        print(vc.i)
     }
-    
+
 }
+
+
+

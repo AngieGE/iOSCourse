@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "queen_of_hearts.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "queen_of_hearts.png",
       "scale" : "2x"
     },
     {
