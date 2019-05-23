@@ -11,4 +11,5 @@ import UIKit
 struct Card{
     var image: String
     var name: String
+    var counter: Int
 }

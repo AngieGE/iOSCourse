@@ -16,7 +16,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        print("selected item \(items[indexPath.section][indexPath.row])")
+        //print(indexPath.section)
+        if indexPath.row == 0 && indexPath.section == 4 {
+                //TODO reset all to 0
+        }else{
+            items[indexPath.section][indexPath.row].counter = items[indexPath.section][indexPath.row].counter + 1
+        }
         tableView.reloadData()
     }
     
@@ -26,10 +31,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)//) as! StopLightTableViewTableViewCell
-        
-        cell.textLabel?.text = items[indexPath.section][indexPath.row].name//card.name
+        let storyboard = self.storyboard!;
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! StopLightTableViewTableViewCell
+        cell.commandLabel.text = items[indexPath.section][indexPath.row].name
+        cell.commandCounter.text = String(items[indexPath.section][indexPath.row].counter)
+        cell.commandImage.image = UIImage(named: items[indexPath.section][indexPath.row].image)
+
         
         return cell
     }
@@ -42,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let nums = ["1", "2","3","4","5","6","7","8","9","10", "jack", "king", "queen"]
+        let nums = ["ace", "2","3","4","5","6","7","8","9","10", "jack", "king", "queen"]
         let icons = ["clubs", "diamonds", "hearts", "spades"]
         var clubsCards = [Card]()
         var diamondsCards = [Card]()
@@ -53,7 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             for j in 0..<4{
                 let _img = nums[i] + "_of_" + icons[j]
                 let _name = nums[i] + " of " + icons[j]
-                let MyCard = Card(image: _img, name: _name)
+                let MyCard = Card(image: _img, name: _name, counter: 0)
                 if j == 0{
                     clubsCards.append(MyCard)
                 }
@@ -73,7 +81,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let _img = "Click to reset"
         let _name = "Click to reset"
-        let MyCard = Card(image: _img, name: _name)
+        let MyCard = Card(image: _img, name: _name, counter: 0)
      
         extraSec.append(MyCard)
       

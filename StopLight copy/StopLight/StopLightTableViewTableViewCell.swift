@@ -11,6 +11,9 @@ import UIKit
 class StopLightTableViewTableViewCell: UITableViewCell {
 
     @IBOutlet weak var commandLabel : UILabel!
+    @IBOutlet weak var commandImage: UIImageView!
+    @IBOutlet weak var commandCounter : UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
