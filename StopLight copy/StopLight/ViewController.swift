@@ -19,6 +19,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //print(indexPath.section)
         if indexPath.row == 0 && indexPath.section == 4 {
                 //TODO reset all to 0
+            print("reset")
+            for i in 0..<4{
+                for j in 0..<13{
+                    items[i][j].counter = 0
+                }
+            }
         }else{
             items[indexPath.section][indexPath.row].counter = items[indexPath.section][indexPath.row].counter + 1
         }
