@@ -1,0 +1,27 @@
+{
+	
+    "suits" : [  { "name" : "earth",
+    	          "id" : 0,
+    	          "img" : "http://images/earth.jpg"
+               },
+               {
+                  "name" : "air",
+    	          "id" : 1,
+    	          "img" : "http://images/earth.jpg"
+               },{
+                  "name" : "fire",
+    	          "id" : 2,
+    	          "img" : "http://images/earth.jpg"
+               },{
+                  "name" : "water",
+    	          "id" : 3,
+    	          "img" : "http://images/earth.jpg"
+               },
+               {
+                  "name" : "love",
+    	          "id" : 4,
+    	          "img" : "http://images/earth.jpg"
+               }
+           ]
+
+}
