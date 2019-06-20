@@ -18,15 +18,53 @@ class Playing: GKState {
   }
   
   override func didEnter(from previousState: GKState?) {
-
+    //sets the motion of the ball
+    //for the first time when it enters the Playing state
+    if previousState is WaitingForTap {
+        let ball = scene.childNode(withName: BallCategoryName) as! SKSpriteNode
+        ball.physicsBody!.applyImpulse(CGVector(dx: randomDirection(), dy: randomDirection()))
+    }
   }
-  
+  //called every frame
+    //all this prevent the ball to get stuck in an up and down or left and right position
+    //when bouncing
   override func update(deltaTime seconds: TimeInterval) {
+    let ball = scene.childNode(withName: BallCategoryName) as! SKSpriteNode
+    let maxSpeed: CGFloat = 400.0
+    
+    let xSpeed = sqrt(ball.physicsBody!.velocity.dx * ball.physicsBody!.velocity.dx)
+    let ySpeed = sqrt(ball.physicsBody!.velocity.dy * ball.physicsBody!.velocity.dy)
+    
+    let speed = sqrt(ball.physicsBody!.velocity.dx * ball.physicsBody!.velocity.dx + ball.physicsBody!.velocity.dy * ball.physicsBody!.velocity.dy)
+    
+    if xSpeed <= 10.0 {
+        ball.physicsBody!.applyImpulse(CGVector(dx: randomDirection(), dy: 0.0))
+    }
+    if ySpeed <= 10.0 {
+        ball.physicsBody!.applyImpulse(CGVector(dx: 0.0, dy: randomDirection()))
+    }
+    
+    if speed > maxSpeed {
+        ball.physicsBody!.linearDamping = 0.4
+    } else {
+        ball.physicsBody!.linearDamping = 0.0
+    }
 
   }
   
   override func isValidNextState(_ stateClass: AnyClass) -> Bool {
     return stateClass is GameOver.Type
   }
+    
+    //just adds a bit randomless to the direction of the ball
+    func randomDirection() -> CGFloat {
+        let speedFactor: CGFloat = 3.0
+        if scene.randomFloat(from: 0.0, to: 100.0) >= 50 {
+            return -speedFactor
+        } else {
+            return speedFactor
+        }
+    }
+
 
 }
