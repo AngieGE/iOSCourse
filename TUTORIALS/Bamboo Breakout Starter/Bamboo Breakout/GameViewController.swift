@@ -44,6 +44,16 @@ class GameViewController: UIViewController {
             scene.scaleMode = .aspectFit
             
             skView.presentScene(scene)
+            
+            let first = UserDefaults.standard.bool(forKey: "first")
+            
+            if first == true {
+                let alert = UIAlertController(title: "Welcome", message: "Do you want to start playing", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+                
+                self.present(alert, animated: true)
+            }
         }
     }
 
