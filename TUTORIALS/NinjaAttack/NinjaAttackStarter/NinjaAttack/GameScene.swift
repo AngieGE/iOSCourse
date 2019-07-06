@@ -78,7 +78,7 @@ extension CGPoint {
 
 class GameScene: SKScene {
   // pass the image of the spite and store the sprite in a var
-  let player = SKSpriteNode(imageNamed: "player")
+  let player = SKSpriteNode(imageNamed: "Image-1")
   
   override func didMove(to view: SKView) {
     // set the background
@@ -119,7 +119,7 @@ class GameScene: SKScene {
   func addMonster() {
     
     // Create sprite
-    let monster = SKSpriteNode(imageNamed: "monster")
+    let monster = SKSpriteNode(imageNamed: "Image-2")
     
     monster.physicsBody = SKPhysicsBody(rectangleOf: monster.size) // create the physic body for the sprite
     monster.physicsBody?.isDynamic = true // set the sprite to be dynamic
