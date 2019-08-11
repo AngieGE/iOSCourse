@@ -306,7 +306,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/NinjaAttack/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.NinjaAttack;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vfs.angie.ninjas-com.vfs.angie.ninjas-com.vfs.angie.ninjas-com.vfs.angie.ninjas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -325,7 +325,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/NinjaAttack/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.NinjaAttack;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vfs.angie.ninjas-com.vfs.angie.ninjas-com.vfs.angie.ninjas-com.vfs.angie.ninjas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
